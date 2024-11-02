@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web FDR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fdrlogo.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2980b9; 
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8em;
+            margin: 10px 0 0 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            color: #2980b9; 
+        }
+
+        nav {
+            background-color: #333;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: #333;
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .portada {
+            text-align: center;
+            margin: 20px 0; 
+        }
+
+        .portada h3 {
+            font-size: 2em;
+            font-family: 'Georgia', serif;
+            font-weight: bold; 
+        }
+
+        .portada p {
+            font-size: 1.2em; 
+            margin: 10px 0;
+        }
+
+        .portada ul {
+            list-style: none;
+            padding: 0; 
+            font-size: 1.2em;
+        }
+
+        .cuadro-texto {
+            background-color: #2980b9; 
+            color: white; 
+            padding: 20px; 
+            border-radius: 10px;
+            margin-top: 20px; 
+            text-align: center; 
+            font-weight: bold;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; 
+            }
+
+            h2 {
+                font-size: 1.5em; 
+            }
+
+            nav ul {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CENTRO DE EDUCACIÓN MEDIA GUBERNAMENTAL</h1>
+    <h2>FRANKLIN DELANO ROOSEVELT</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="">Carreras</a>
+            <ul>
+                <li><a href="carrerainformatica.html">Informática</a></li>
+                <li><a href="carreracontaduria.html">Contaduría y Finanzas</a></li>
+                <li><a href="carreracienciasyhumanidades.html">Ciencias y Humanidades</a></li>
+                <li><a href="carreraadministracionhotelera.html">Administración Hotelera</a></li>
+            </ul>
+        </li>
+        <li><a href="jornadass.html">Jornadas</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="ofertasacademicas.html">Ofertas Académicas</a></li>
+        <li><a href="quienessomoss.html">Quiénes somos</a></li>
+        <li><a href="promo2024.html">Promo 2024</a></li> 
+    </ul>
+</nav>
+
+<main>
+    <div class="portada">
+        <h3>Información sobre nuestra institución</h3>
+        <p><strong>Fecha de fundación:</strong> Junio de 1945</p>
+        <p><strong>Ubicación:</strong> R389+M3H, CA-13, El Porvenir, Puerto Cortés</p>
+        <p><strong>Director del Instituto:</strong> Juan Carlos Zuniga</p>
+        <h4>Información Sobre:</h4>
+        <ul>
+            <li>Carreras</li>
+            <li>Jornadas</li>
+            <li>Instalaciones</li>
+            <li>Ofertas Académicas</li>
+            <li>Quiénes Somos</li>
+        </ul>
+    </div>
+    
+    <div class="cuadro-texto">
+        <p>No importa cuán lento avances, siempre y cuando no te detengas.</p>
+        <p>«Los desafíos son lo que hacen que la vida sea interesante y superarlos es lo que hace que la vida tenga sentido».</p>
+        <p>«La clave para el éxito es enfocarse en las metas, no en los obstáculos».</p>
+        <p>«Cada día es una nueva oportunidad para aprender y crecer».</p>
+    </div>
+
+    <!-- Video Publicitario -->
+    <div class="video-container">
+        <video controls>
+            <source src="video cole.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+</main>
+
+</body>
+</html>
